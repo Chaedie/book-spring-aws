@@ -31,7 +31,7 @@ deploy:
     wait-until-deployed: true
     on:
       branch: main # main branch 허용
-      
+
   - provider: codedeploy
     access_key_id: $AWS_ACCESS_KEY # Travis repo settings 에 설정된 값
     secret_access_key: $AWS_SECRET_KEY # Travis repo settings 에 설정된 값
@@ -42,6 +42,8 @@ deploy:
     deployment_group: spring-aws-web-group # 웹 콘솔에서 등록한 CodeDeploy 배포 그룹
     region: ap-northeast-2
     wait-until-deployed: true
+    on:
+      branch: main # main branch 허용
 
 # CI 실행 완료 시 메일로 알람
 notifications:
