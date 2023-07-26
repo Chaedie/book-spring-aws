@@ -2,9 +2,12 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '2.7.14'
     id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+
+    // 자동 생성되지 않는 부분 (배포 환경 트러블 슈팅을 위해 추가)
     id 'application'
 }
 
+// 자동 생성되지 않는 부분 (배포 환경 트러블 슈팅을 위해 추가)
 application {
     mainClass = 'chaedie.awsspring.AwsSpringApplication'
 }
