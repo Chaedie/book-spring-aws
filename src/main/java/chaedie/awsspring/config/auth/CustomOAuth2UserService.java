@@ -1,8 +1,8 @@
 package chaedie.awsspring.config.auth;
 
+import chaedie.awsspring.config.auth.dto.OAuthAttributes;
 import chaedie.awsspring.domain.user.User;
 import chaedie.awsspring.domain.user.UserRepository;
-import chaedie.awsspring.web.dto.OAuthAttributes;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;

@@ -1,4 +1,4 @@
-package chaedie.awsspring.web.dto;
+package chaedie.awsspring.config.auth.dto;
 
 import chaedie.awsspring.domain.user.Role;
 import chaedie.awsspring.domain.user.User;
