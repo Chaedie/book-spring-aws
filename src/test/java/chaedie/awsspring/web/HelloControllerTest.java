@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.hamcrest.Matchers.is;
@@ -18,6 +19,7 @@ class HelloControllerTest {
     @Autowired
     private MockMvc mvc;
 
+    @WithMockUser(roles = "USER")
     @Test
     void hello가_리턴된다() throws Exception {
         String hello = "hello";
@@ -28,6 +30,7 @@ class HelloControllerTest {
                 .andDo(print());
     }
 
+    @WithMockUser(roles = "USER")
     @Test
     void helloDto() throws Exception {
         // given
