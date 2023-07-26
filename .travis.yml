@@ -32,10 +32,11 @@ deploy:
     wait-until-deployed: true
     on:
       branch: main # main branch 허용
+
   - provider: codedeploy
     access_key_id: $AWS_ACCESS_KEY # Travis repo settings 에 설정된 값
     secret_access_key: $AWS_SECRET_KEY # Travis repo settings 에 설정된 값
-    bucket: spring-aws-web # S3 버킷
+    bucket: spring-aws-web-build # S3 버킷
     key: spring-aws-web.zip # 빌드 파일을 압축해서 전달
     bundle_type: zip # 압축 확장자
     application: spring-aws-web # 웹 콘솔에서 등록한 CodeDeploy 애플리케이션
