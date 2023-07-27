@@ -38,3 +38,6 @@ out/
 
 ### db properties ###
 application-*.properties
+#!application-real.properties
+!application-real1.properties
+!application-real2.properties
