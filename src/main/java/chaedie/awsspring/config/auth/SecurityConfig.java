@@ -22,7 +22,7 @@ public class SecurityConfig {
                 .headers().frameOptions().disable()
                 .and()
                 .authorizeHttpRequests(authorize -> authorize
-                        .antMatchers("/", "/css/**", "/images/**", "/js/**", "/h2-console/**", "/profile").permitAll()
+                        .antMatchers("/", "/css/**", "/images/**", "/js/**", "/h2-console/**", "/profile").permitAll() // "/profile" 추가
                         .antMatchers("/api/v1/**").hasRole(Role.USER.name())
                         .anyRequest().authenticated())
                 .logout(logout -> logout
