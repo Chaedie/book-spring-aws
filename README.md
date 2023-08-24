@@ -1,15 +1,19 @@
 # book-spring-aws
 
 - 배포 링크: [링크](http://ec2-52-79-134-26.ap-northeast-2.compute.amazonaws.com/)
+- 기술 스택:
+    - Java, Spring Boot
+    - JPA, Hibernate, MariaDB
+    - Mustach
 - 구조
-<img width="530" alt="image" src="https://github.com/Chaedie/book-spring-aws/assets/88099590/9098d1ab-1091-40a6-8e9f-cb81b1088329">
+<img width="807" alt="image" src="https://github.com/Chaedie/book-spring-aws/assets/88099590/581433b7-2cac-4530-85af-dd4b17f0c24f">
 
 
 ## 레퍼런스
 
 - 스프링 부트와 AWS로 혼자 구현하는 웹 서비스
 
-<img width="300" src="https://github.com/Chaedie/book-spring-aws/assets/88099590/c50edfc3-0bde-4303-881c-e8fa92bcc918"/>
+
 
 ### 배운 점
 
