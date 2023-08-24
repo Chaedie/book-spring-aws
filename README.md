@@ -1,5 +1,10 @@
 # book-spring-aws
 
+- 배포 링크: [링크](http://ec2-52-79-134-26.ap-northeast-2.compute.amazonaws.com/)
+- 구조
+<img width="530" alt="image" src="https://github.com/Chaedie/book-spring-aws/assets/88099590/9098d1ab-1091-40a6-8e9f-cb81b1088329">
+
+
 ## 레퍼런스
 
 - 스프링 부트와 AWS로 혼자 구현하는 웹 서비스
